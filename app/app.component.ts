@@ -8,13 +8,14 @@ export class Hero {
 @Component({
   selector: 'my-app',
   template: `
-    <h1>{{title}}</h1>
+    <app-title [title]="title"></app-title>
     <h2>{{hero.name}} details!</h2>
     <div><label>id: </label>{{hero.id}}</div>
     <div>
       <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name">
+      <input [(ngModel)]="hero.name" placeholder="name">
     </div>
+    <app-contact></app-contact>
     `
 })
 export class AppComponent {
