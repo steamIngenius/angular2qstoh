@@ -1,0 +1,45 @@
+* DONE Make /Contact/ a feature module
+CLOSED: [2016-10-01 Sat 15:32]
+** DONE Create the ~ContactModule~ in the ~app/contact~ folder.
+CLOSED: [2016-10-01 Sat 15:30]
+** DONE Move the contact material from ~AppModule~ to ~ContactModule~.
+CLOSED: [2016-10-01 Sat 15:30]
+** DONE Replace the imported ~BrowserModule~ with ~CommonModule~.
+CLOSED: [2016-10-01 Sat 15:30]
+** DONE Import the ~ContactModule~ into the ~AppModule~.
+CLOSED: [2016-10-01 Sat 15:30]
+
+
+
+* DONE Routing and lazy loading modules
+CLOSED: [2016-10-01 Sat 23:16]
+https://angular.io/docs/ts/latest/guide/ngmodule.html#!#lazy-loading-modules-with-the-router
+** Refactor into 3 features
+*** Contact
+*** Hero
+*** Crisis
+** Navigate with Angular Router
+** ~ContactComponent~ is the default destination when the app starts.
+** The ~ContactModule~ continues to be 'eagerly' loaded when the application starts.
+** ~HeroModule~ and the ~CrisisModule~ are lazy loaded (by the router)
+
+
+* Back to ToH!
+** DONE Make a branch for the modules docs stuff
+CLOSED: [2016-10-01 Sat 23:22]
+** DONE Checkout ToH stuff
+CLOSED: [2016-10-02 Sun 13:45]
+** DONE Fix master branch!!
+CLOSED: [2016-10-02 Sun 13:45]
+~git push -f origin $rollback_commit_id:master~ Then I think I switched to master and maybe ~git pull~ or something - I remember fixing a merge conflict but I had file modifications that really conflated this.
+
+** DONE Add Hero selection
+CLOSED: [2016-10-02 Sun 22:39]
+https://goo.gl/hQzPDJ
+
+** Refactor master-detail into multiple components
+*** DONE ~HeroDetailComponent~
+CLOSED: [2016-10-02 Sun 23:11]
+*** TODO Continue on with knowledge gained from Modules docs
+
+** TODO Create a Hero Service instead of using a mock

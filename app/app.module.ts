@@ -9,6 +9,8 @@ import { UserService } from './user.service';
 
 import { ContactModule } from './contact/contact.module';
 
+import { HeroDetailComponent } from './hero-detail.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -18,6 +20,7 @@ import { ContactModule } from './contact/contact.module';
   declarations: [
     AppComponent,
     TitleComponent,
+    HeroDetailComponent,
     HighlightDirective,
   ],
   providers: [
