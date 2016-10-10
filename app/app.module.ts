@@ -3,28 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TitleComponent } from './title.component';
-import { HighlightDirective } from './highlight.directive';
-import { UserService } from './user.service';
-
-import { ContactModule } from './contact/contact.module';
-
 import { HeroDetailComponent } from './hero-detail.component';
+import { HeroesComponent } from './heroes.component';
+import { HeroService } from './hero.service';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    ContactModule,
   ],
   declarations: [
     AppComponent,
-    TitleComponent,
     HeroDetailComponent,
-    HighlightDirective,
+    HeroesComponent,
   ],
   providers: [
-    UserService,
+    HeroService
   ],
   bootstrap: [ AppComponent ],
 })

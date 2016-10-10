@@ -42,4 +42,10 @@ https://goo.gl/hQzPDJ
 CLOSED: [2016-10-02 Sun 23:11]
 *** TODO Continue on with knowledge gained from Modules docs
 
-** TODO Create a Hero Service instead of using a mock
+** DONE Create a Hero Service instead of using a mock
+   CLOSED: [2016-10-09 Sun 21:23]
+   :LOGBOOK:
+   CLOCK: [2016-10-09 Sun 15:10]--[2016-10-09 Sun 20:36] =>  5:26
+   CLOCK: [2016-10-09 Sun 11:35]--[2016-10-09 Sun 14:40] =>  3:05
+   :END:
+** TODO Add Routing https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
