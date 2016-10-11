@@ -48,4 +48,6 @@ CLOSED: [2016-10-02 Sun 23:11]
    CLOCK: [2016-10-09 Sun 15:10]--[2016-10-09 Sun 20:36] =>  5:26
    CLOCK: [2016-10-09 Sun 11:35]--[2016-10-09 Sun 14:40] =>  3:05
    :END:
-** TODO Add Routing https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
+** DONE Add Routing https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
+   CLOSED: [2016-10-11 Tue 14:12]
+** TODO Replace mock data with data from an HTTP request
