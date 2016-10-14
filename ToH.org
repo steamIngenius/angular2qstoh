@@ -50,4 +50,17 @@ CLOSED: [2016-10-02 Sun 23:11]
    :END:
 ** DONE Add Routing https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
    CLOSED: [2016-10-11 Tue 14:12]
-** TODO Replace mock data with data from an HTTP request
+** DONE Replace mock data with data from an HTTP request
+   CLOSED: [2016-10-13 Thu 16:17]
+   :LOGBOOK:
+   CLOCK: [2016-10-13 Thu 14:44]--[2016-10-13 Thu 16:17] =>  1:33
+   :END:
+** TODO HTTP CRUD stuff
+*** DONE Update
+    CLOSED: [2016-10-14 Fri 00:24]
+*** DONE Add
+    CLOSED: [2016-10-14 Fri 10:28]
+**** Where does the hero id come from?
+***** We used POST! it comes from HTTP POST spec I guess
+*** TODO Remove
+** TODO Hero Search feature
