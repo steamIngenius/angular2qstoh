@@ -10,11 +10,21 @@ import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent }        from './app.component';
+import { HighlightDirective }  from './highlight.directive';
+import { TitleComponent }      from './title.component';
+import { UserService }         from './user.service';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
 import { DashboardComponent }  from './dashboard.component';
 import { HeroSearchComponent } from './hero-search.component';
+
+import { ContactComponent }    from './contact/contact.component';
+import { ContactService }      from './contact/contact.service';
+import { AwesomePipe }         from './contact/awesome.pipe';
+import {
+  HighlightDirective as ContactHighlightDirective
+} from './contact/highlight.directive';
 
 
 @NgModule({
@@ -41,17 +51,29 @@ import { HeroSearchComponent } from './hero-search.component';
         path: 'detail/:id',
         component: HeroDetailComponent
       },
+      {
+        path: 'contacts',
+        component: ContactComponent
+      },
     ])
   ],
   declarations: [
     AppComponent,
+    HighlightDirective,
+    TitleComponent,
     HeroDetailComponent,
     HeroesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+
+    ContactComponent,
+    ContactHighlightDirective,
+    AwesomePipe,
   ],
   providers: [
-    HeroService
+    HeroService,
+    UserService,
+    ContactService,
   ],
   bootstrap: [ AppComponent ],
 })

@@ -41,6 +41,7 @@ https://goo.gl/hQzPDJ
 *** DONE ~HeroDetailComponent~
 CLOSED: [2016-10-02 Sun 23:11]
 *** TODO Continue on with knowledge gained from Modules docs
+**** TODO ReDo ngModules docs
 
 ** DONE Create a Hero Service instead of using a mock
    CLOSED: [2016-10-09 Sun 21:23]
@@ -55,7 +56,8 @@ CLOSED: [2016-10-02 Sun 23:11]
    :LOGBOOK:
    CLOCK: [2016-10-13 Thu 14:44]--[2016-10-13 Thu 16:17] =>  1:33
    :END:
-** TODO HTTP CRUD stuff
+** DONE HTTP CRUD stuff
+   CLOSED: [2016-10-16 Sun 12:24]
 *** DONE Update
     CLOSED: [2016-10-14 Fri 00:24]
 *** DONE Add
