@@ -19,16 +19,13 @@ import { HeroService }         from './hero.service';
 import { DashboardComponent }  from './dashboard.component';
 import { HeroSearchComponent } from './hero-search.component';
 
-import { ContactComponent }    from './contact/contact.component';
-import { ContactService }      from './contact/contact.service';
-import { AwesomePipe }         from './contact/awesome.pipe';
-import {
-  HighlightDirective as ContactHighlightDirective
-} from './contact/highlight.directive';
+import { ContactModule }    from './contact/contact.module';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   imports: [
+    ContactModule,
     BrowserModule,
     FormsModule,
     HttpModule,
@@ -65,15 +62,10 @@ import {
     HeroesComponent,
     DashboardComponent,
     HeroSearchComponent,
-
-    ContactComponent,
-    ContactHighlightDirective,
-    AwesomePipe,
   ],
   providers: [
     HeroService,
     UserService,
-    ContactService,
   ],
   bootstrap: [ AppComponent ],
 })
