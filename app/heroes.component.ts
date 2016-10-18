@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  trigger,
+  state,
+  style,
+  transition,
+  animate
+} from '@angular/core';
 import { Router }            from '@angular/router';
 
 import { Hero } from './hero';
@@ -11,6 +19,20 @@ import { HeroService } from './hero.service';
   templateUrl: 'heroes.component.html',
   styleUrls: ['heroes.component.css'],
   providers: [HeroService],
+  animations: [
+    trigger('heroState', [
+      state('inactive', style({
+        backgroundColor: '#eee',
+        transform: 'scale(1)'
+      })),
+      state('active', style({
+        backgroundColor: '#cfd8dc',
+        transform: 'scale(1.1)'
+      })),
+      transition('inactive => active', animate('100ms ease-in')),
+      transition('active => inactive', animate('100ms ease-out'))
+    ])
+  ],
 })
 export class HeroesComponent implements OnInit {
   selectedHero: Hero;
