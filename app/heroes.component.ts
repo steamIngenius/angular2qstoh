@@ -51,8 +51,8 @@ export class HeroesComponent implements OnInit {
   }
 
   onSelect(hero: Hero): void {
-    if (this.selectedHero) this.selectedHero.toggleState();
     hero.toggleState();
+    if (this.selectedHero) this.selectedHero.toggleState();
     this.selectedHero = hero;
   }
 
