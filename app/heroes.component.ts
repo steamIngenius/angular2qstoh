@@ -51,6 +51,8 @@ export class HeroesComponent implements OnInit {
   }
 
   onSelect(hero: Hero): void {
+    if (this.selectedHero) this.selectedHero.toggleState();
+    hero.toggleState();
     this.selectedHero = hero;
   }
 
@@ -75,5 +77,9 @@ export class HeroesComponent implements OnInit {
         this.heroes = this.heroes.filter(h => h !== hero);
         if (this.selectedHero === hero) { this.selectedHero = null; }
       });
+  }
+
+  logThis(hero: Hero): void {
+    console.log(hero);
   }
 }

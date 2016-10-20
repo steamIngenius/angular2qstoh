@@ -40,8 +40,10 @@ https://goo.gl/hQzPDJ
 ** Refactor master-detail into multiple components
 *** DONE ~HeroDetailComponent~
 CLOSED: [2016-10-02 Sun 23:11]
-*** TODO Continue on with knowledge gained from Modules docs
-**** TODO ReDo ngModules docs
+*** DONE Continue on with knowledge gained from Modules docs
+    CLOSED: [2016-10-18 Tue 09:20]
+**** DONE ReDo ngModules docs
+     CLOSED: [2016-10-18 Tue 09:20]
 
 ** DONE Create a Hero Service instead of using a mock
    CLOSED: [2016-10-09 Sun 21:23]
@@ -68,3 +70,4 @@ CLOSED: [2016-10-02 Sun 23:11]
     CLOSED: [2016-10-14 Fri 10:55]
 ** DONE Hero Search feature
    CLOSED: [2016-10-14 Fri 14:20]
+** TODO Do some Animation stuff https://angular.io/docs/ts/latest/guide/animations.html
